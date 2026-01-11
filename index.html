@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Techista en Chascomús | Soluciones en Techos</title>
+<meta name="description" content="Techista en Chascomús con más de 12 años de experiencia. Reparación, mantenimiento e impermeabilización de techos.">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --blue:#0b3c6d;
+  --blue-dark:#072a4d;
+  --gray:#f2f2f2;
+  --dark:#1a1a1a;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  font-family:'Montserrat', sans-serif;
+  color:#222;
+  line-height:1.6;
+}
+
+/* TOP BAR */
+.topbar{
+  background:#111;
+  color:#fff;
+  font-size:13px;
+  padding:8px 30px;
+  display:flex;
+  justify-content:space-between;
+}
+
+/* HEADER */
+header{
+  background:#fff;
+  border-bottom:1px solid #e5e5e5;
+}
+.header-wrap{
+  max-width:1280px;
+  margin:auto;
+  padding:22px 30px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.logo{
+  font-size:28px;
+  font-weight:600;
+  color:var(--blue);
+  letter-spacing:1px;
+}
+nav a{
+  margin-left:26px;
+  text-decoration:none;
+  color:#333;
+  font-weight:500;
+  font-size:15px;
+}
+
+/* HERO */
+.hero{
+  background:url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c") center/cover no-repeat;
+  height:460px;
+  position:relative;
+}
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,.55);
+}
+.hero-content{
+  position:relative;
+  z-index:2;
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#fff;
+  padding:20px;
+}
+.hero h1{
+  font-size:44px;
+  font-weight:600;
+}
+.hero p{
+  margin-top:12px;
+  font-size:18px;
+  font-weight:300;
+}
+
+/* SECTIONS */
+.section{
+  padding:80px 30px;
+}
+.container{
+  max-width:1280px;
+  margin:auto;
+}
+.section-title{
+  text-align:center;
+  font-size:34px;
+  font-weight:500;
+  margin-bottom:60px;
+}
+
+/* SERVICES */
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:40px;
+}
+.service{
+  text-align:center;
+  font-size:15px;
+}
+.icon-circle{
+  width:80px;
+  height:80px;
+  border:2px solid var(--blue);
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:0 auto 18px;
+  font-size:30px;
+  color:var(--blue);
+}
+
+/* WORKS */
+.works{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:30px;
+}
+.work{
+  background:#fff;
+  border:1px solid #e2e2e2;
+}
+.work img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+.work p{
+  padding:18px;
+  font-size:15px;
+  font-weight:500;
+}
+
+/* COMPANY */
+.company{
+  background:url("https://images.unsplash.com/photo-1581092334434-bf8c6b2c0c79") center/cover no-repeat;
+  position:relative;
+  color:#fff;
+}
+.company::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,.65);
+}
+.company .container{
+  position:relative;
+  z-index:2;
+  text-align:center;
+}
+.company p{
+  max-width:900px;
+  margin:auto;
+  font-size:16px;
+  font-weight:300;
+}
+
+/* CTA */
+.cta{
+  background:var(--blue);
+  color:#fff;
+  text-align:center;
+  padding:60px 30px;
+}
+.cta a{
+  display:inline-block;
+  margin-top:25px;
+  background:#25d366;
+  color:#fff;
+  padding:15px 36px;
+  border-radius:40px;
+  text-decoration:none;
+  font-size:17px;
+  font-weight:500;
+}
+
+/* FOOTER */
+footer{
+  background:var(--dark);
+  color:#ccc;
+  padding:60px 30px;
+}
+.footer-grid{
+  max-width:1280px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:40px;
+}
+footer h4{
+  color:#fff;
+  margin-bottom:14px;
+  font-weight:500;
+}
+
+/* WHATSAPP FLOAT */
+.wpp{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  width:62px;
+  height:62px;
+  background:#25d366;
+  color:#fff;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:32px;
+  text-decoration:none;
+  box-shadow:0 8px 20px rgba(0,0,0,.35);
+  z-index:999;
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+  <div>📞 02241 408800</div>
+  <div>Techista en Chascomús</div>
+</div>
+
+<header>
+  <div class="header-wrap">
+    <div class="logo">TECHOS CHASCOMÚS</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Servicios</a>
+      <a href="#">Trabajos</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <div>
+      <h1>Soluciones Profesionales en Techos</h1>
+      <p>Más de 12 años de experiencia en Chascomús y alrededores</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Nuestros Servicios</h2>
+    <div class="services">
+      <div class="service">
+        <div class="icon-circle">🏠</div>
+        Reparación de techos
+      </div>
+      <div class="service">
+        <div class="icon-circle">💧</div>
+        Impermeabilización
+      </div>
+      <div class="service">
+        <div class="icon-circle">🛠️</div>
+        Mantenimiento
+      </div>
+      <div class="service">
+        <div class="icon-circle">🏗️</div>
+        Techos nuevos
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Nuestros Trabajos</h2>
+    <div class="works">
+      <div class="work">
+        <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c">
+        <p>Vivienda particular – Chascomús</p>
+      </div>
+      <div class="work">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
+        <p>Impermeabilización de losa</p>
+      </div>
+      <div class="work">
+        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994">
+        <p>Reparación integral de techo</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section company">
+  <div class="container">
+    <h2 class="section-title">La Empresa</h2>
+    <p>
+      Somos un servicio de techista con más de 12 años de experiencia,
+      enfocados en soluciones duraderas, trabajo prolijo y cumplimiento,
+      brindando confianza a cada cliente en Chascomús y alrededores.
+    </p>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Comunicate con nosotros</h2>
+  <a href="https://wa.me/5492241408800" target="_blank">Contactar por WhatsApp</a>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4>Contacto</h4>
+      <p>📞 02241 408800</p>
+      <p>📍 Chascomús</p>
+    </div>
+    <div>
+      <h4>Servicios</h4>
+      <p>Reparación</p>
+      <p>Impermeabilización</p>
+      <p>Mantenimiento</p>
+    </div>
+  </div>
+</footer>
+
+<a class="wpp" href="https://wa.me/5492241408800" target="_blank">💬</a>
+
+</body>
+</html>
